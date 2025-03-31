@@ -1,0 +1,196 @@
+ 
+
+  
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+  /* border-bottom: 1px solid #ddd; */
+  margin-bottom: 20px;
+ 
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b00;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ff6b00;
+}
+
+.telegram-banner {
+ 
+   text-align: center;
+   border-radius: 5px;
+}
+
+.telegram-banner h2 {
+  /* margin-bottom: 10px; */
+  font-size: 20px;
+}
+
+.telegram-banner a {
+   font-weight: bold;
+  text-decoration: none;
+}
+
+.content {
+ 
+  padding: 30px;
+  
+}
+
+.content h1 {
+  color: #ff6b00;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+
+
+.carousel-item {
+  transition: transform 2s ease-in-out;  
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  height: 90px;
+  transition: height 0.3s ease;
+  margin-right: 10px;
+}
+
+.rounded-image {
+  border-radius: 30px;
+
+}
+ 
+
+
+ 
+  .fixed-social-icons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(65, 68, 25, 0.8);
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .fixed-social-icons .btn-social {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .fixed-social-icons .btn-social:hover {
+    background-color: #f39c12;
+    border-color: #f39c12;
+    transform: scale(1.1);
+  }
+
+
+  /* Add these media queries at the end of your CSS */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    /* order: 1;
+    flex: 1; */
+    min-width: 150px;
+    font-size: 20px;
+  }
+  
+  .logo img {
+    height: 70px;
+  }
+  
+  
+  
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+    /* display: none;   */
+  }
+  
+  nav.active {
+    display: block;  
+  }
+  
+  nav ul {
+    flex-direction: column;
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: none;
+  }
+  
+  nav ul li {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  /* Mobile menu toggle button */
+  .menu-toggle {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ff6b00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+}
+
+ 
+
+ 

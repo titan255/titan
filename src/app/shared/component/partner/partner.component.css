@@ -1,0 +1,129 @@
+.container {
+  margin-top: 30px;
+
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 55px;
+}
+
+.highlight {
+  color: #e3690c;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.partner-item:hover {
+  transform: translateY(-5px);
+  }
+
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px 20px 50px 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  position: relative;
+  height: 250px; /* Increased height for larger logo */
+  text-align: center;
+}
+.partner-item:nth-child(2) .partner-footer {
+  background: #31649f;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.partner-logo {
+  max-height: 100px; /* Adjusted for larger logo */
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.partner-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #e3690c;
+  border-radius: 0 0 50px 50px;
+  padding: 10px;
+  text-align: center;
+  border-top: 4px solid rgb(163, 159, 159);
+}
+
+.partner-domain {
+  color: #fff; /* Changed to white */
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.partner-domain:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .partner-item {
+    height: 200px; /* Adjusted height for responsiveness */
+    padding: 20px 15px;
+  }
+  .partner-item:nth-child(2) .partner-footer,
+.partner-item:nth-child(3) .partner-footer,
+.partner-item:nth-child(4) .partner-footer,
+.partner-item:nth-child(6) .partner-footer {
+  background: #31649f;
+}
+
+  .partner-logo {
+    max-height: 80px; /* Responsive size */
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .partners-container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .partner-item {
+    height: 160px; /* Adjusted height for small screens */
+  }
+
+  .partner-logo {
+    max-height: 60px; /* Responsive size for small screens */
+  }
+}
